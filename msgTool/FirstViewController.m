@@ -27,6 +27,14 @@
 
 - (IBAction)didTouchUp:(id)sender {
     NSLog(@"Button Pressed!");
+    [self sendSampleAIprotocolRequest1];
+}
+
+- (void)sendSampleAIprotocolRequest1 {
+    //  call NSURL in such a way as to send data to the AISport app using its protocol aisport://
+    
+    NSURL *myURL = [NSURL URLWithString:@"aisport://www.acme.com?Quarterly%20Report#200806231300"];
+    [[UIApplication sharedApplication] openURL:myURL];
 }
 
 @end
