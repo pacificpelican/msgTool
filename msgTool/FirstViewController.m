@@ -25,5 +25,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)didTouchUp:(id)sender {
+    NSLog(@"Button Pressed!");
+}
 
 @end

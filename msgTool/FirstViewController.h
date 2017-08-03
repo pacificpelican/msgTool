@@ -10,6 +10,9 @@
 
 @interface FirstViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *button;
+
+- (IBAction)didTouchUp:(id)sender;
 
 @end
 
