@@ -30,11 +30,18 @@
     [self sendSampleAIprotocolRequest1];
 }
 
+- (IBAction)touchSecond:(id)sender {
+    NSLog(@"Button (second) Pressed!");
+    [self sendSampleAIprotocolRequest1];
+}
+
 - (void)sendSampleAIprotocolRequest1 {
     //  call NSURL in such a way as to send data to the AISport app using its protocol aisport://
     
     NSURL *myURL = [NSURL URLWithString:@"aisport://www.acme.com?Quarterly%20Report#200806231300"];
     [[UIApplication sharedApplication] openURL:myURL];
+    
+     NSLog(@"Reached end of sendSampleAIprotocolRequest1");
 }
 
 @end

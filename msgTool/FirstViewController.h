@@ -14,5 +14,9 @@
 
 - (IBAction)didTouchUp:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIButton *secondButton;
+
+- (IBAction)touchSecond:(id)sender;
+
 @end
 
