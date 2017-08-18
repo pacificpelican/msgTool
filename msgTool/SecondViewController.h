@@ -10,6 +10,9 @@
 
 @interface SecondViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *urlText;
+
+- (IBAction)sendUrlButton:(UIButton *)sender;
 
 @end
 

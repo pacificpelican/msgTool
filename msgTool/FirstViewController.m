@@ -27,7 +27,7 @@
 
 - (IBAction)didTouchUp:(id)sender {
     NSLog(@"Button Pressed!");
-    [self sendSampleAIprotocolRequest1];
+    [self sendSampleAIprotocolRequest2];
 }
 
 - (IBAction)touchSecond:(id)sender {
@@ -42,6 +42,24 @@
     [[UIApplication sharedApplication] openURL:myURL];
     
      NSLog(@"Reached end of sendSampleAIprotocolRequest1");
+}
+
+- (void)sendSampleAIprotocolRequest2 {
+    //  call NSURL in such a way as to send data to the AISport app using its protocol aisport://
+    
+    NSURL *myURL = [NSURL URLWithString:@"aisport://v1/impact/TimeAddedToDb:2017-08-07T15:53:36.244Z/TimeAddedToAzure:2017-08-07T15:53:36.244Z/ImpactMagnitudeMss:0/HicScore:0/"];
+    [[UIApplication sharedApplication] openURL:myURL];
+    
+    NSLog(@"Reached end of sendSampleAIprotocolRequest1");
+}
+
+- (void)sendArbitraryRequest2 {
+    //  call NSURL in such a way as to send whatever was input
+    
+    NSURL *myURL = [NSURL URLWithString:@"aisport://v1/impact/TimeAddedToDb:2017-08-07T15:53:36.244Z/TimeAddedToAzure:2017-08-07T15:53:36.244Z/ImpactMagnitudeMss:0/HicScore:0/"];
+    [[UIApplication sharedApplication] openURL:myURL];
+    
+    NSLog(@"Reached end of sendSampleAIprotocolRequest1");
 }
 
 @end
