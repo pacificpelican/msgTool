@@ -25,6 +25,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)touchThird:(id)sender {
+    NSLog(@"Button (third) Pressed!");
+    [self sendArbitraryRequest2];
+}
+
+
+- (void)sendArbitraryRequest2 {
+    //  call NSURL in such a way as to send whatever was input
+    
+    NSURL *myURL = [NSURL URLWithString:@"aisport://v1/impact/TimeAddedToDb:2017-08-07T15:53:36.244Z/TimeAddedToAzure:2017-08-07T15:53:36.244Z/ImpactMagnitudeMss:0/HicScore:0/"];
+    [[UIApplication sharedApplication] openURL:myURL];
+    
+    NSLog(@"Reached end of sendSampleAIprotocolRequest1");
+}
+
 
 
 - (IBAction)sendUrlButton:(UIButton *)sender {

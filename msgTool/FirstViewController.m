@@ -35,6 +35,11 @@
     [self sendSampleAIprotocolRequest1];
 }
 
+- (IBAction)touchThird:(id)sender {
+    NSLog(@"Button (third) Pressed!");
+    [self sendArbitraryRequest2];
+}
+
 - (void)sendSampleAIprotocolRequest1 {
     //  call NSURL in such a way as to send data to the AISport app using its protocol aisport://
     
