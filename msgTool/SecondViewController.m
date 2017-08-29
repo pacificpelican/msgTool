@@ -25,23 +25,34 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)touchThird:(id)sender {
-    NSLog(@"Button (third) Pressed!");
-    [self sendArbitraryRequest2];
-}
 
-
-- (void)sendArbitraryRequest2 {
+- (void)sendArbitraryRequest2:(NSString*)textToSend {
     //  call NSURL in such a way as to send whatever was input
-    
-    NSURL *myURL = [NSURL URLWithString:@"aisport://v1/impact/TimeAddedToDb:2017-08-07T15:53:36.244Z/TimeAddedToAzure:2017-08-07T15:53:36.244Z/ImpactMagnitudeMss:0/HicScore:0/"];
+    NSLog(@"received URL string input: ");
+    NSLog(@"%@", textToSend);
+    NSURL *myURL = [NSURL URLWithString:textToSend];
+ //   NSURL *myURL = [NSURL URLWithString:@"https://athleteintelligence.com"];
+    NSLog(@"URL to launch: ");
+    NSLog(@"%@", myURL);
+ //   NSURL *myURL = textToSend;
     [[UIApplication sharedApplication] openURL:myURL];
     
-    NSLog(@"Reached end of sendSampleAIprotocolRequest1");
+    NSLog(@"Reached end of sendArbitraryRequest2");
 }
-
 
 
 - (IBAction)sendUrlButton:(UIButton *)sender {
+    NSString *entryTxt = _urlText.text;
+ //   [self sendArbitraryRequest2:entryTxt];
+    NSLog(@"received URL string input: ");
+    NSLog(@"%@", entryTxt);
+    NSURL *myURL = [NSURL URLWithString:entryTxt];
+    //   NSURL *myURL = [NSURL URLWithString:@"https://athleteintelligence.com"];
+    NSLog(@"URL to launch: ");
+    NSLog(@"%@", myURL);
+    //   NSURL *myURL = textToSend;
+    [[UIApplication sharedApplication] openURL:myURL];
+    
+    NSLog(@"Reached end of sendUrlButton");
 }
 @end

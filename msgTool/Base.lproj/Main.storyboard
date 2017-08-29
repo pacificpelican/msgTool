@@ -51,6 +51,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                 <state key="normal" title="athleteintelligence.com"/>
+                                <connections>
+                                    <action selector="touchFourth:" destination="9pv-A4-QxB" eventType="touchUpInside" id="RL5-Ex-MDH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gjx-Uo-vRW">
                                 <rect key="frame" x="35" y="284" width="305" height="30"/>
@@ -65,6 +68,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                 <state key="normal" title="djmcloud.com"/>
+                                <connections>
+                                    <action selector="touchThird:" destination="9pv-A4-QxB" eventType="touchUpInside" id="myk-e8-6va"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -125,6 +131,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="send request"/>
                                 <connections>
+                                    <action selector="sendUrlButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="CAA-Wt-EF5"/>
                                     <action selector="touchThird:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="FEe-Nk-bZh"/>
                                 </connections>
                             </button>

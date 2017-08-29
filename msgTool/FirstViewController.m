@@ -36,7 +36,12 @@
 }
 
 - (IBAction)touchThird:(id)sender {
-    NSLog(@"Button (third) Pressed!");
+    NSLog(@"Button (third [0]) Pressed!");
+    [self sendArbitraryRequest3];
+}
+
+- (IBAction)touchFourth:(id)sender {
+    NSLog(@"Button (fourth [0]) Pressed!");
     [self sendArbitraryRequest2];
 }
 
@@ -46,7 +51,7 @@
     NSURL *myURL = [NSURL URLWithString:@"aisport://www.acme.com?Quarterly%20Report#200806231300"];
     [[UIApplication sharedApplication] openURL:myURL];
     
-     NSLog(@"Reached end of sendSampleAIprotocolRequest1");
+     NSLog(@"Reached end of sendSampleAIprotocolRequest1 [0]");
 }
 
 - (void)sendSampleAIprotocolRequest2 {
@@ -55,16 +60,25 @@
     NSURL *myURL = [NSURL URLWithString:@"aisport://v1/impact/TimeAddedToDb:2017-08-07T15:53:36.244Z/TimeAddedToAzure:2017-08-07T15:53:36.244Z/ImpactMagnitudeMss:0/HicScore:0/"];
     [[UIApplication sharedApplication] openURL:myURL];
     
-    NSLog(@"Reached end of sendSampleAIprotocolRequest1");
+    NSLog(@"Reached end of sendSampleAIprotocolRequest2 [0]");
 }
 
 - (void)sendArbitraryRequest2 {
     //  call NSURL in such a way as to send whatever was input
     
-    NSURL *myURL = [NSURL URLWithString:@"aisport://v1/impact/TimeAddedToDb:2017-08-07T15:53:36.244Z/TimeAddedToAzure:2017-08-07T15:53:36.244Z/ImpactMagnitudeMss:0/HicScore:0/"];
+    NSURL *myURL = [NSURL URLWithString:@"https://athleteintelligence.com"];
     [[UIApplication sharedApplication] openURL:myURL];
     
-    NSLog(@"Reached end of sendSampleAIprotocolRequest1");
+    NSLog(@"Reached end of sendArbitraryRequest2 [0]");
+}
+
+- (void)sendArbitraryRequest3 {
+    //  call NSURL in such a way as to send whatever was input
+    
+    NSURL *myURL = [NSURL URLWithString:@"http://djmcloud.com"];
+    [[UIApplication sharedApplication] openURL:myURL];
+    
+    NSLog(@"Reached end of sendArbitraryRequest3 [0]");
 }
 
 @end
