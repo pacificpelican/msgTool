@@ -1,7 +1,7 @@
 msgTool
 ======
 
-## an NSURL tool for creating GET requests
+## an iOS NSURL app for creating GET requests
 ##### from [Dan McKeown](http://danmckeown.info) and [Athlete Intelligence](https://athleteintelligence.com)
 ##### August 2017
 
@@ -10,8 +10,9 @@ msgTool
 - send GET requests using NSURL based on user input on tab 2
 
 ### Requirements
-- Xcode
+- [Xcode](https://developer.apple.com/xcode/)
 
 ### Screenshots
 ![tab1](msgTool-screenshot1.jpg)
+* * *
 ![tab2](msgTool-screenshot2.jpg)
