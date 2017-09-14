@@ -6,7 +6,7 @@ msgTool
 ##### August 2017
 
 ### Features
-- send test URL requests to aipsort:// protocol on tab 1
+- send test URL requests to aisport:// protocol on tab 1
 - send GET requests using NSURL based on user input on tab 2
 
 ### Requirements
